@@ -1,10 +1,8 @@
 import './LightSwitch.css';
-import { useContext } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 
 function LightSwitch() {
   const { themeName, setThemeName } = useTheme();
-  let classString
 
   return (
     <div className={['light-switch', themeName].join(' ')}>
